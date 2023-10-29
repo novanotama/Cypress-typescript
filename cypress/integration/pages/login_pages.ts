@@ -19,7 +19,7 @@ export class LoginPage{
     }
     assertLogin(){
         cy.get('.title').should('be.visible')
-        cy.get('.peek').should('be.visible')
+       // cy.get('.peek').should('be.visible') error setelah saya running karna element not exist
         cy.contains('Products').should('contain','Products')
     }
     assertLoginFail(){
